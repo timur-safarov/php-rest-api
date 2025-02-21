@@ -7,7 +7,7 @@
 	},
 	"item": [
 		{
-			"name": "http://php-rest-api.local/user-api/add-user_post",
+			"name": "http://php-rest-api.local/user-api/user-create_post",
 			"request": {
 				"auth": {
 					"type": "basic",
@@ -62,7 +62,7 @@
 			"response": []
 		},
 		{
-			"name": "http://php-rest-api.local/user-api/view-user_get?id=93&token=e388077aedcc8446134617272f35d50f4e2dc669",
+			"name": "http://php-rest-api.local/user-api/user_get?id=93&token=e388077aedcc8446134617272f35d50f4e2dc669",
 			"request": {
 				"auth": {
 					"type": "noauth"
@@ -95,7 +95,7 @@
 			"response": []
 		},
 		{
-			"name": "http://php-rest-api.local/user-api/delete-user_delete?id=161",
+			"name": "http://php-rest-api.local/user-api/user_delete?id=161",
 			"request": {
 				"auth": {
 					"type": "basic",
@@ -124,7 +124,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://php-rest-api.local/user-api/delete-user_delete?id=161",
+					"raw": "http://php-rest-api.local/user-api/user_delete?id=172",
 					"protocol": "http",
 					"host": [
 						"php-rest-api",
@@ -132,12 +132,12 @@
 					],
 					"path": [
 						"user-api",
-						"delete-user_delete"
+						"user_delete"
 					],
 					"query": [
 						{
 							"key": "id",
-							"value": "161"
+							"value": "172"
 						}
 					]
 				}
