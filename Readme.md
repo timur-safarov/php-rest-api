@@ -1,9 +1,9 @@
 
-<p align="center">
-    <a href="https://www.php.net/" target="_blank" style="background-color: #4d5994;">
-        <img src="https://www.php.net/images/logos/php-logo-white.svg" height="100px">
+<p style="text-align: center;">
+    <a href="https://www.php.net/" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Webysther_20160423_-_Elephpant.svg/117px-Webysther_20160423_-_Elephpant.svg.png" height="100px">
     </a>
-    <h1 align="center">React - CRUD-API JSON-SERVER DataGrid table</h1>
+    <h1 style="text-align: center;">Php - CRUD-API</h1>
     <br>
 </p>
 
@@ -59,7 +59,7 @@ Instalation for Distribution Linux - Ubuntu
 * ``` service apache2 restart ```
 
 ### 4). Склонируйте репозиторий
-* ``` git clone repo ./ ```
+* ``` git clone git@github.com:timur-safarov/php-rest-api.git ./ ```
 
 ### 5). Импортируйте sql базу
 * ``` mysql -h localhost -u root -proot your_db_name < /path-php-app/db.sql ```
@@ -78,16 +78,16 @@ API методы
    - или вам нужно зарегистрироваться и использовать свои логин и пароль
    - Для примера есть файл API.postman_collection.json, который можно импортировать в приложение Postman
 
-### 1). Получить список доступных адресов Api /user-api/index_get?token=
+### 1). Получить список доступных адресов Api <b style="background-color: #39acff;">/user-api/index_get?token=</b>
 
-### 2). Получить данные пользователя по его id /user-api/user_get?id=100&token=
+### 2). Получить данные пользователя по его id <b style="background-color: #39acff;">/user-api/user_get?id=100&token=</b>
 
-### 3). Авторизация пользователя, данный метод используеться только при обращении через браузер /user-api/auth_post
+### 3). Авторизация пользователя, данный метод используеться только при обращении через браузер <b style="background-color: #39acff;">/user-api/auth_post</b>
    - Создан просто дополнительно чтобы сам сайт тоже через Api работал;
 
-### 4). Создать пользователя /user-api/user-create_post
+### 4). Создать пользователя <b style="background-color: #39acff;">/user-api/user-create_post</b>
 
-### 5). Обновить пользователя /user-api/user-update_post
+### 5). Обновить пользователя <b style="background-color: #39acff;">/user-api/user-update_post</b>
 
-### 6). Удалить пользователя по его id /user-api/user_delete?id=100
+### 6). Удалить пользователя по его id <b style="background-color: #39acff;">/user-api/user_delete?id=100</b>
 
