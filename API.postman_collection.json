@@ -1,0 +1,199 @@
+{
+	"info": {
+		"_postman_id": "4afd9958-ee2c-4f5b-88cd-57ff46aa050c",
+		"name": "API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "3344967"
+	},
+	"item": [
+		{
+			"name": "http://php-rest-api.local/user-api/add-user_post",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "12345",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "new-user2",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "12345",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "new-user1@mail.com",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://php-rest-api.local/user-api/user-create_post",
+					"protocol": "http",
+					"host": [
+						"php-rest-api",
+						"local"
+					],
+					"path": [
+						"user-api",
+						"user-create_post"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://php-rest-api.local/user-api/view-user_get?id=93&token=e388077aedcc8446134617272f35d50f4e2dc669",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://php-rest-api.local/user-api/user_get?id=161&token=e388077aedcc8446134617272f35d50f4e2dc669",
+					"protocol": "http",
+					"host": [
+						"php-rest-api",
+						"local"
+					],
+					"path": [
+						"user-api",
+						"user_get"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "161"
+						},
+						{
+							"key": "token",
+							"value": "e388077aedcc8446134617272f35d50f4e2dc669"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://php-rest-api.local/user-api/delete-user_delete?id=161",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "12345",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://php-rest-api.local/user-api/delete-user_delete?id=161",
+					"protocol": "http",
+					"host": [
+						"php-rest-api",
+						"local"
+					],
+					"path": [
+						"user-api",
+						"delete-user_delete"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "161"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://php-rest-api.local/user-api/user-update_post?id=167",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "12345",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "wow",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://php-rest-api.local/user-api/user-update_post?id=167",
+					"protocol": "http",
+					"host": [
+						"php-rest-api",
+						"local"
+					],
+					"path": [
+						"user-api",
+						"user-update_post"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "167"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
