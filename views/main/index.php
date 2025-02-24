@@ -8,7 +8,6 @@
 		
 		<form id="reg" class="intro-newslatter" action="main/user-create" method="post">
 
-
 			<fieldset class="d-flex flex-wrap align-content-center flex-column">
 
 				<div class="input-group w-50 mb-4">
